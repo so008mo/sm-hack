@@ -1,11 +1,11 @@
 from flask import Flask, render_template
 
-application =  Flask(__name__)
+app =  Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def hello():
     message = "Hello, World"
     return render_template("index.html")
 
 if __name__ == "__main__":
-    application.run(debug = True)
+    app.run(threaded=True,host='0.0.0.0',port=5000)
