@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Soumya Mohanty "mohantysoumya14@gmail.com"
+MAINTAINER SO008MO "mohantysoumya14@gmail.com"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev && \
